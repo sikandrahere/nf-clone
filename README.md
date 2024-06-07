@@ -11,4 +11,4 @@
 
 ## Demo
 
--Check out the live demo: https://sikandrahere.github.io/nf-clone/
+- Check out the live demo: https://sikandrahere.github.io/nf-clone/
