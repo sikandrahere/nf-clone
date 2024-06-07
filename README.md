@@ -1,7 +1,14 @@
+## Netflix Clone
+!Netflix Clone
 
-## How It Works
-- Find a Property: Search for available properties using our real-time analytics.
-- Buy a Property: Explore listings and make informed decisions.
-- Investing: Discover investment opportunities effortlessly.
+- A simplified front-end clone of Netflix created using React and CSS.
 
-#check live 
+- This project aims to replicate the Netflix design and showcase its features.
+
+## Features
+
+- Responsive design for various screen sizes.
+
+## Demo
+
+-Check out the live demo: https://sikandrahere.github.io/nf-clone/
