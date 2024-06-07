@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    color: white;
+
+}
+body{
+    background-color: black;
+
+}
+.main{
+    position: relative;
+    height: 700px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../nf-clone/img/nf-background.jpg);
+    background-size:max(1500px,100vw);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav{
+    max-width:80vw;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+@media screen and (max-width:500px)  {
+    nav{
+        flex-direction: column;
+    }
+    
+}
+nav img{
+    position: relative;
+    width: 148px;
+}
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding:7px 20px ;
+    font-size: 20px;
+    border-radius:4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+nav button:nth-child(1){
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    text-align: center;
+
+}
+
+.main .content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 15px;
+    /* padding: 30px */
+}
+.main .content> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.main .content:nth-child(2){
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.main .content:nth-child(3){
+    font-size: 20px;
+    text-align: center;
+}
+
+.main .content input,.faq input{
+    position: relative;
+    height: 45px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.556);
+    padding-left: 2px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+ 
+}
+@media screen and (max-width:350px) {
+    .main .content> :first-child{
+        font-size: 28px;
+    }
+    .main .content:nth-child(2){
+        font-size: 20px;
+    }
+    .main .content:nth-child(3){
+        font-size: 20px;
+    }
+    .main .content input,.faq input{
+        font-size: 18px;
+    }   
+}
+
+@media screen and (max-width:318px) {
+    .main .content> :first-child{
+        font-size: 18px;
+    }
+    .main .content:nth-child(2){
+        font-size: 15px;
+    }
+    .main .content:nth-child(3){
+        font-size: 15px;
+    }
+    .main .content input,.faq input{
+        font-size: 13px;
+    }   
+}
+
+@media screen and (max-width:200px) {
+  
+    .main .content input,.faq input{
+        height: 30px;
+        font-size: 7px;
+    }
+
+    
+}
+.content button,.faq button {
+    padding: 2px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    background: #db0000d6;
+    color: #fff;
+    border: 1px solid #db0001;
+    cursor: pointer;
+   
+}
+
+hr{
+    height: 15px;
+    background-color: #1a0b0b2f;
+    border: 1px solid rgb(43, 41, 41);
+}
+
+
+/* first */
+
+
+.first{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:1028px) {
+    .first{
+        flex-direction: column;
+    }
+    
+}
+.first > div{
+    padding: 30px;
+}
+.img-sec{
+    position: relative;
+}
+.img-sec img{
+    position: relative;
+    width: 450px;
+    z-index: 10;
+    overflow: hidden;
+}
+.img-sec video{
+    position: absolute;
+    width: 440px;
+    top: 51px;
+    right: 31px;
+    z-index: -10;
+}
+
+@media screen and (max-width:600px) {
+    .img-sec img{
+        width: 350px;
+    }
+    .img-sec video{
+        width: 340px;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .img-sec img{
+        width: 250px;
+    }
+    .img-sec video{
+        width: 240px;
+    }
+    
+}
+
+@media screen and (max-width:315px) {
+    .img-sec img{
+        width: 200px;
+    }
+    .img-sec video{
+        width: 190px;
+    }
+    
+}
+
+@media screen and (max-width:270px) {
+    .img-sec img{
+        width: 120px;
+    }
+    .img-sec video{
+        width: 110px;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .first h1{
+        font-size: 28px;
+    }
+    
+ }
+ @media screen and (max-width:318px) {
+    .first h1{
+        font-size: 18px;
+    }
+    
+ }
+
+
+
+/* faq */
+
+.faq{
+    text-align: center;
+    
+}
+
+
+.faq h1{
+    margin: 4rem;
+    font-size: 3rem;
+}
+.faq ul{
+    width: 100%;
+    max-width: 70%;
+    margin: auto auto;
+    
+
+    }
+.faq ul li{
+    margin: .5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    
+    
+}
+.faq ul li input[type=radio]{
+    display: none;
+    
+}
+.faq ul li label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #303030;
+}
+.faq ul li label:hover{
+    background-color: #404040;
+}
+
+.faq ul li label::after{
+    content:"+";
+    font-size: 2rem;
+}
+
+.faq .content{
+    font-size: 20px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    background-color: #303030;
+    margin-top: .1rem;
+    text-align: left;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.faq  input[type=radio]:checked +label + .content{
+    max-height: 500px;
+    padding: 1rem;
+}
+
+ .faq  input[type=radio]:checked + label::after{
+    content:"-";
+    transition:all 0.5s;
+ } 
+ .faq h3{
+    margin-top: 4rem;
+ }
+
+ @media screen and (max-width:350px) {
+    .faq h1{
+        font-size: 28px;
+    }
+    
+ }
+ @media screen and (max-width:318px) {
+    .faq h1{
+        font-size: 18px;
+    }
+    
+ }
+
+/* footer */
+
+
+
+.footer{
+    width: 50%;
+    margin: auto;
+  
+ }
+ .footer h3{
+    margin: 1.1rem;
+    font-weight: 10;
+    font-size: 1rem;
+    color: #ffffff96;
+    
+ }
+ .footer h3 a{
+    color: rgba(255, 255, 255, 0.559);
+ }
+ .footer .col-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+    
+ }
+ .footer .col-sec ul{
+    list-style: none;
+ }
+ .footer .col-sec ul li{
+    padding: .6rem;
+    font-size: 1rem;
+ }
+ .footer .col-sec ul li a{
+    color: #ffffffa8;
+    font-weight: 10;
+    
+ }
+
+ .footer button{
+    border: 0;
+    outline: 0;
+    background:transparent;
+    color: white;
+    padding:7px 20px ;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius:4px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+
+ @media screen and (max-width:496px) {
+    .footer .col-sec{
+        flex-direction: column;
+    
+ }
+}
